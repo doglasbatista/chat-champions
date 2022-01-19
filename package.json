@@ -8,6 +8,7 @@
   ],
   "scripts": {
     "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
     "dev:cerberus": "turbo run dev --scope='cerberus'",
     "dev:pythia": "turbo run dev --scope='pythia'",
     "lint": "turbo run lint",
