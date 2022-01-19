@@ -9,6 +9,7 @@
   "scripts": {
     "build": "turbo run build",
     "dev:cerberus": "turbo run dev --scope='cerberus'",
+    "dev:pythia": "turbo run dev --scope='pythia'",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
