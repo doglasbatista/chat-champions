@@ -1,4 +1,4 @@
-## chat champions front-end
+# chat champions front-end
 
 monorepo containing all front-end application fromt the group.
 
@@ -9,18 +9,14 @@ monorepo containing all front-end application fromt the group.
 - [turborepo](https://turborepo.org/)
 - [yarn](https://classic.yarnpkg.com/lang/en/)
 
-# Turborepo starter
-
-This is an official Yarn v1 starter turborepo.
-
 ## projects division
 
 the projects are divided into two folder
 
-### applications
+### apps
 
-- `cerberus`: task manager
-- `pythia`: data visualization
+- `cerberus`: task manager - [production address](https://cerberus-tau.vercel.app)
+- `pythia`: data visualization - [production address](https://pythia-two.vercel.app/)
 
 ### packages
 - `venus`: design system
