@@ -1,21 +1,36 @@
 <script setup lang="ts">
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
-import HelloWorld from './components/HelloWorld.vue'
+import { EmptyState } from 'venus';
+
+const primaryButtonData = {
+  text: 'add a new one',
+  action: () => console.log('adding a new one'),
+};
+
+const imageData = {
+  url: 'https://i.pinimg.com/originals/dc/da/19/dcda190421b351dd54052996225ca048.png',
+  descritiveText: 'snoopy and woodstock relaxing',
+  width: '512',
+  height: '256',
+};
+
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+  <div class="wrapper">
+    <EmptyState 
+      header="you're all done!" 
+      description="you have done all your labours, enjoy your day 😎"
+      :primary-button="primaryButtonData"
+      :image="imageData"
+    />
+  </div>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="scss">
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>
