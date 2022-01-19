@@ -53,3 +53,10 @@ to build all apps and packages, run the following command:
 ```
 yarn run build
 ```
+
+or each invidual application with:
+
+```bash
+yarn build:cerberus
+yarn build:pythia
+```
